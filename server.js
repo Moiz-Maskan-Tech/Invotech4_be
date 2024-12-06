@@ -18,7 +18,7 @@ app.get('/register',(req,res) => {
     res.send("register")
 })
 
-//          port
+// port number 
 
 app.listen(port, () => {
   console.log(`app is listing on port number ${port} `);
