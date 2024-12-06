@@ -1,9 +1,17 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+require('dotenv').config()
+
+const port = process.env.PORT;
+
+const data = {
+  name : "moiz",
+  tech : "JS",
+}
 
 app.get("/", (req, res) => {
-  res.send("Hello invotech");
+  res.json(data)
+  // res.send("Hello invotech");
 });
 
 app.get('/instagram',(req,res) => {
